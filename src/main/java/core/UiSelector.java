@@ -68,4 +68,8 @@ public class UiSelector {
         locator = xPath;
         return this;
     }
+
+    public UiObject makeUiObject(){
+        return new UiObject(locator);
+    }
 }
